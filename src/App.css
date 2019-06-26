@@ -23,6 +23,57 @@
   color: #61dafb;
 }
 
+#start {
+  margin-top: 30%;
+}
+
+.input { 
+  margin: 20px 0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  width: 30%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.button {
+  margin: 20px;
+  background-color:burlywood;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 8px;
+}
+
+
+.display-screen {
+  color:  darkgrey;
+}
+
+.display-left {
+  color: red;
+  font-weight: bolder;
+}
+
+.my-list {
+  position: relative;
+  left: -8%;
+  margin-top: 10px;
+  max-height: 270px;
+  list-style-type: none;
+ /* margin-left: -10%; */
+  font-size: 20px;
+  font-weight:bolder;
+  color:cornflowerblue;
+  overflow: scroll;
+}
+
+.done {
+  margin-top: 200px;
+  color: red;
+  font-weight: bold;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
