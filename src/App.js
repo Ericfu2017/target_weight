@@ -62,7 +62,8 @@ class App extends Component {
     setTimeout(() =>  this.setState({
       targetWeight: 0,
       nowWeight: -1,
-      data: []
+      data: [],
+      visible: !this.state.visible
     }), 2000)
    ;
     
