@@ -56,14 +56,16 @@ class App extends Component {
 
   handleConfirmDone() {
 
+    this.setState({
+      visible: !this.state.visible
+    });
+
     setTimeout(() =>  this.setState({
       targetWeight: 0,
       nowWeight: -1,
       data: [],
-    }), 2000 )
-   
-
-   ;
+      visible: !this.state.visible
+    }), 2000 );
     
   }
 
@@ -90,7 +92,7 @@ class App extends Component {
       )
     } else if (this.state.nowWeight < 1) {
         return (
-          <Animated animationIn="zoomIn"  animationInDuration={2000} isVisible={this.state.visible}>
+          <Animated animationIn="zoomIn" animationOut="lightSpeedOut" animationInDuration={2000} animationOutDuration={2000} isVisible={this.state.visible}>
             <div className="App">
               <div className="done">
                 <h3>Mission Accomplished!</h3>
