@@ -56,12 +56,15 @@ class App extends Component {
 
   handleConfirmDone() {
 
-    this.setState({
+    setTimeout(() =>  this.setState({
       targetWeight: 0,
       nowWeight: -1,
       data: [],
-    });
+    }), 2000 )
    
+
+   ;
+    
   }
 
   render() {
